@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bags.bagsscorer.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="New Game"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/undo_button"
+        android:layout_width="131dp"
+        android:layout_height="0dp"
+        android:text="Undo"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/plus_one_b_button"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/team_a_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Team A:"
+        android:layout_marginStart="30dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/team_b_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Team B:"
+        android:layout_marginEnd="13dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="13dp" />
+
+    <TextView
+        android:id="@+id/team_a_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="0"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/team_a_label"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/team_a_label"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/team_a_label" />
+
+    <TextView
+        android:id="@+id/team_b_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="0"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/team_b_label"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/team_b_label"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/team_b_label" />
+
+    <Button
+        android:id="@+id/plus_three_a_button"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:text="+ 3"
+        android:layout_marginStart="59dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/plus_one_a_button"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="59dp" />
+
+    <Button
+        android:id="@+id/plus_one_a_button"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:text="+ 1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/new_game_button"
+        app:layout_constraintRight_toRightOf="@+id/plus_three_a_button"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintLeft_toLeftOf="@+id/plus_three_a_button" />
+
+    <Button
+        android:id="@+id/plus_three_b_button"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:text="+ 3"
+        android:layout_marginEnd="49dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/plus_one_b_button"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="49dp" />
+
+    <Button
+        android:id="@+id/plus_one_b_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="+ 1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/plus_one_a_button"
+        app:layout_constraintRight_toRightOf="@+id/plus_three_b_button"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/plus_three_b_button"
+        app:layout_constraintTop_toTopOf="@+id/plus_one_a_button" />
+
+    <Button
+        android:id="@+id/go_over_button"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:text="Can Go Over 21"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/plus_one_b_button"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="175dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="175dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/team_b_label" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Mode:"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/go_over_button"
+        android:layout_marginStart="34dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintLeft_toLeftOf="@+id/go_over_button"
+        android:layout_marginLeft="34dp" />
+
+</android.support.constraint.ConstraintLayout>
